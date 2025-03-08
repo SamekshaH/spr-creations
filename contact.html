@@ -225,7 +225,7 @@
     };
 
     try {
-        const response = await fetch("https://github.com/SamekshaH/spr-creations-api.git", { // Make sure it matches backend route
+        const response = await fetch("https://spr-creations-api.vercel.app/send", { // Make sure it matches backend route
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)

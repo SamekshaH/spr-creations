@@ -13,7 +13,26 @@ body {
 ::selection {
   background: #000;
   color: #fff; }
-
+  
+  .profile-img,
+.profile-img:hover {
+  filter: none !important;
+  -webkit-filter: none !important;
+  -webkit-transform: none !important;
+}
+  .profile-img {
+    width: 500px;        
+     /* Adjust width as desired */
+    height: 500px;        /* Adjust height as desired */
+    object-fit: cover;    /* Ensures the image fills the circle */
+  }
+.profile-img1{
+  filter: none !important;
+  -webkit-filter: none !important;
+  -webkit-transform: none !important;
+  width:90%;
+  
+}
 a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
@@ -26,10 +45,87 @@ a {
 
 .bg-black {
   background: #000 !important; }
+  .spr-logo {
+    display: inline-block;
+    font-size: 40px;         /* Makes the text bigger */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #fff;
+    animation: fadeInDown 1s ease-out forwards, pulse 2s infinite alternate;
+  }
+  
+  /* Animation to slide in from above with fading effect */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation to add a glowing pulse effect */
+  @keyframes pulse {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+  }
 
  .site-sec1{
-    margin-top: 100px !important;
+    margin-top: 120px !important;
   } 
+  #contactForm {
+    font-size: 2rem;
+    max-width: 700px; /* Optional: limit the width */
+    margin: 0 auto;   /* Center the form if needed */
+  }
+
+  /* Make input fields and textarea larger */
+  #contactForm .form-control {
+    font-size: 2rem;
+    padding: 12px 15px;
+    height: auto;
+  }
+
+  /* Increase the label font size for better visibility */
+  #contactForm label {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  /* Style the submit button to match */
+  .btn-coustom {
+    font-size: 2rem;
+    padding: 12px 20px;
+  }
+  .col-lg-3.ml-auto .mb-3 p {
+    font-size: 1.5rem !important;
+  }
+  
+  /* Make bold labels even larger */
+  .col-lg-3.ml-auto .mb-3 p.font-weight-bold {
+    font-size: 1.7rem !important;
+  }
+  
+  /* Ensure links inside these paragraphs also have increased size */
+  .col-lg-3.ml-auto .mb-3 p a.label-black {
+    font-size: 1.5rem !important;
+  }
+ /**** Increase the font size of the <h2> ****/
+.text-center.mb-5 h2.text-black.font-weight-light.mb-4 {
+  font-size: 3rem; /* Adjust as needed */
+}
+
+/**** Increase the font size of the <p> ****/
+.text-center.mb-5 p.mb-4 {
+  font-size: 2rem; /* Adjust as needed */
+}
 
 .site-wrap:before {
   -webkit-transition: .3s all ease-in-out;
@@ -222,11 +318,12 @@ a {
 /* Navbar */
   .site-navbar {
     margin-bottom: 0px;
-    margin-top: -92px;
+   margin-top: 0px;
     width:100%;
     background:#000000; /*changes background*/
-     z-index: 500; 
-    position: fixed;  }
+     z-index: 1000; 
+    position: fixed;  
+  top:0;}
   .site-navbar.transparent {
     background: transparent; }
   .site-navbar.absolute {
@@ -1229,25 +1326,31 @@ font-size:30px;}
 #lightgallery .item {
   margin-bottom: 30px; }
   #lightgallery .item img {
-    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+    filter: url(filters.svg#grayscale); 
+    /* Firefox 3.5+ */
     filter: gray;
     /* IE5+ */
     -webkit-filter: grayscale(1);
     /* Webkit Nightlies & Chrome Canary */
-    -webkit-transition: all .1s ease-in-out; }
+    -webkit-transition: all .1s ease-in-out;
+  }
   #lightgallery .item:hover img {
     filter: none;
     -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01); }
+    -webkit-transform: scale(1.01);
+  }
 
 img {
-  /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+  filter: url(filters.svg#grayscale); 
+  /* Firefox 3.5+ */
   filter: gray;
   /* IE5+ */
   -webkit-filter: grayscale(1);
   /* Webkit Nightlies & Chrome Canary */
-  -webkit-transition: all .1s ease-in-out; }
+  -webkit-transition: all .1s ease-in-out; 
+}
   img:hover {
     filter: none;
     -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.01); }
+    -webkit-transform: scale(1.01); 
+  }

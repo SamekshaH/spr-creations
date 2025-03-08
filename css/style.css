@@ -81,27 +81,27 @@ a {
     margin-top: 120px !important;
   } 
   #contactForm {
-    font-size: 2rem;
+    font-size: 1.3rem;
     max-width: 700px; /* Optional: limit the width */
     margin: 0 auto;   /* Center the form if needed */
   }
 
   /* Make input fields and textarea larger */
   #contactForm .form-control {
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 12px 15px;
     height: auto;
   }
 
   /* Increase the label font size for better visibility */
   #contactForm label {
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 600;
   }
 
   /* Style the submit button to match */
   .btn-coustom {
-    font-size: 2rem;
+    font-size: 1.3rem;
     padding: 12px 20px;
   }
   .col-lg-3.ml-auto .mb-3 p {

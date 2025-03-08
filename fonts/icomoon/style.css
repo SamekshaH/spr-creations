@@ -14,6 +14,7 @@
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
+  /* color:#ffffff; */
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
@@ -3851,6 +3852,7 @@
 }
 .icon-menu:before {
   content: "\e5d2";
+  color:#ffffff !important;
 }
 .icon-message:before {
   content: "\e0c9";

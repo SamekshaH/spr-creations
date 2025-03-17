@@ -1,9 +1,18 @@
 /* Base */
 .site-menu li a.active {
-  color: #ffffff !important; /* Highlight color */
+  color:#20c997 !important; /* Highlight color */
   font-weight: bold;
   font-size: 24px ;
   border-bottom: 2px solid #ffffff;
+}
+
+
+.label-white
+{
+  color: #ffffff;
+}
+.label-green{
+  color:#20c997 ;
 }
 body {
   line-height: 1.7;
@@ -11,6 +20,29 @@ body {
   font-weight: 300;
   font-size: 1rem;
   background: #000; }
+
+   /* Style for the dropdown */
+   select.form-control {
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    /* border: 1px solid #00ff99; Green border */
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  /* Style dropdown options */
+  select.form-control option {
+    background-color: black;
+    color: white;
+  }
+
+  /* Hover and focus effects */
+  select.form-control:focus {
+    border-color: #00ff99; /* Bright green border */
+    outline: none;
+    box-shadow: 0 0 5px #00ff99;
+  }
+
 
 ::-moz-selection {
   background: #000;
@@ -57,7 +89,7 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    color: #fff;
+    color: #b6d9b9 !important;
     animation: fadeInDown 1s ease-out forwards, pulse 2s infinite alternate;
   }
   
@@ -76,10 +108,10 @@ a {
   /* Animation to add a glowing pulse effect */
   @keyframes pulse {
     from {
-      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      text-shadow: 0 0 10px #00ff99;
     }
     to {
-      text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+      text-shadow: 0 0 20px #20c997 ;
     }
   }
 
@@ -1260,7 +1292,10 @@ font-size:30px;}
   overflow: hidden;
   top: 0;
   left: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px; 
+  transition: border 0.3s ease-in-out;}
   .image-wrap-2:before {
     position: absolute;
     content: "";
@@ -1276,11 +1311,13 @@ font-size:30px;}
   .image-wrap-2 img {
     /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
     filter: gray;
+    transform: scale(1.05);
     /* IE5+ */
     -webkit-filter: grayscale(1);
     /* Webkit Nightlies & Chrome Canary */
     -webkit-transition: all .1s ease-in-out; }
   .image-wrap-2:hover img {
+    border: 8px solid rgb(255, 255, 255);
     filter: none;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01); }
@@ -1338,6 +1375,8 @@ font-size:30px;}
     filter: url(filters.svg#grayscale); 
     /* Firefox 3.5+ */
     filter: gray;
+    border: 1px solid white;
+    border-radius: 10px;
     /* IE5+ */
     -webkit-filter: grayscale(1);
     /* Webkit Nightlies & Chrome Canary */
@@ -1345,8 +1384,11 @@ font-size:30px;}
   }
   #lightgallery .item:hover img {
     filter: none;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
     -webkit-filter: grayscale(0);
     -webkit-transform: scale(1.01);
+    border: 5px solid white;
+    transform: scale(1.05);
   }
 
 img {

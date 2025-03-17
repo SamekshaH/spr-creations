@@ -14,7 +14,7 @@
   width: 100%;  /* Makes images responsive */
   height: 250px; /* Set a fixed height */
   object-fit: contain;  /* Crop the image to fill the box without distortion */
-  border-radius: 8px; /* Optional: Rounds corners for a better look */
+  border-radius: 24px !important; /* Optional: Rounds corners for a better look */
 }
 .lg-icon {
   font-family: 'lg';

@@ -231,7 +231,7 @@ a {
     padding: 4em 0; }
 
 .site-section-heading {
-  color: #fff;
+  color: #20c997 !important;
   position: relative;
   font-size: 3rem !important; }
   @media (min-width: 768px) {
